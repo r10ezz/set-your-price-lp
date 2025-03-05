@@ -327,6 +327,20 @@ html{
   object-position: center;
 }
 
+@media (max-width: 1480px){
+  .main-image2{
+    height: 740px;
+    top: 70px;
+  }
+}
+
+@media (max-width: 1280px){
+  .main-image2{
+    height: 600px;
+    top: 200px;
+  }
+}
+
 .floating-icon {
   position: absolute;
   border-radius: 0.9375rem;
@@ -2155,12 +2169,20 @@ html{
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  background-image: url(/images/color-splash-footer5.png);
-  background-size: cover;  /* Ensures the image covers the entire container */
-  background-position: center;  /* Centers the image */
-  background-repeat: no-repeat; /* Prevents repeating */
-  position: relative; /* Needed for overlay */
+  background-image: 
+    url(/images/color-footer-sample2.png), 
+    url(/images/color-footer-sample2-flip.png); /* Add the image twice */
+  background-size: contain, contain;  
+  background-position: right, left; /* Position one on the right, one on the left */
+  background-repeat: no-repeat, no-repeat; 
+  position: relative;
 }
+
+/* Fix text flip */
+.footer-container * {
+  transform: scaleX(1);
+}
+
 
 
 .footer-top {
