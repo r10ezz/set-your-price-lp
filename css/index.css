@@ -781,7 +781,7 @@ html{
 
 .slider2 {
   padding: 0.625rem;
-  background: #66ac47;
+  background: #3c1b58;
   justify-content: center;
   align-items: center;
   gap: 4rem;
@@ -2170,11 +2170,11 @@ html{
   flex-direction: column;
   overflow-x: hidden;
   background-image: 
-    url(/images/color-footer-sample2.png), 
-    url(/images/color-footer-sample2-flip.png); /* Add the image twice */
-  background-size: contain, contain;  
-  background-position: right, left; /* Position one on the right, one on the left */
-  background-repeat: no-repeat, no-repeat; 
+    url(/images/footer-splash-sample4.png);
+    /* url(/images/color-footer-sample2-flip.png); Add the image twice */
+  background-size:  cover;  
+  background-position: center; /* Position one on the right, one on the left */
+  background-repeat: no-repeat; 
   position: relative;
 }
 
@@ -2664,7 +2664,7 @@ html{
 
   .profile-card-container{
     padding: 64px 148px;
-    background-image: url(../images/green-dice-bg.png);
+    background-image: url(../images/dice-purple-bg.png);
   }
 
   .profile-card{
